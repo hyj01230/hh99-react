@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+body {
+  background-image: linear-gradient(0deg, rgba(195, 191, 191, 0.5), rgba(195, 191, 191, 0.5)), url(./image/sky1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* 이미지 가득차게 */
+  height: 100vh;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box {
+  height: 800px;
+  width: 1200px;
+  margin: 0px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.gnb {
+  /* background-color: #e5e5e5; */
+  color: #f3f3f3;
+  text-shadow: 3.3px 3.3px #4ecedb;
+  font-size: 35px;
+  font-weight: bolder;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  margin: 15px 0px 20px 0px;
+  padding: 25px 5px;
+}
+
+.inputSpace {
+  background-color: #f3f3f3;
+  margin: 0px 0px 20px 0px;
+  padding: 20px 30px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.inputBox1 {
+  border: none;
+  border-radius: 13px;
+  margin-left: 10px;
+  width: 250px;
+  height: 35px;
+  margin-right: 20px;
+}
+
+.inputBox2 {
+  border: none;
+  border-radius: 13px;
+  margin-left: 10px;
+  width: 250px;
+  height: 35px;
+  margin-right: auto;
+}
+
+.addButton {
+  background-color: #4ecedb;
   color: white;
+  border-radius: 13px;
+  border: none;
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.todoStateZone {
+  margin: 10px 0px;
+  padding: 20px 0px;
+  font-size: x-large;
+  font-weight: bold;
+  color: white;
+  /* text-shadow: 1.8px 1.8px #f3f3f3; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todoCardZone {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.todoCard {
+  width: 250px;
+  height: 130px;
+  border: 4px solid #f3f3f3;
+  background-color: #f3f3f3;
+  padding: 25px 20px 20px 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+.todoCard>span {
+  font-size: 20px;
+  font-weight: 900;
+  padding-left: 5px;
+}
+
+.todoCard>p {
+  font-size: 15px;
+  font-weight: 800;
+  padding-left: 5px;
+  margin-bottom: 22px;
+}
+
+.todoCardButton1 {
+  background-color: #e86600;
+  width: 115px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 18px;
+  color: white;
+  margin-right: 15px;
+}
+
+.todoCardButton2 {
+  background-color: #4ecedb;
+  width: 115px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 18px;
+  color: white;
 }
